@@ -8,6 +8,7 @@ describe('stores-api', () => {
 
     beforeAll(async () => {
         await loaders()
+        console.log("readyState:", mongoose.connection.readyState)
         await global.dbManager.provision()
     })
     afterAll(async () => {
