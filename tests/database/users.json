@@ -1,0 +1,34 @@
+[
+  {
+    "_id": {
+      "$oid": "624d7c713e52b83383e0cdc4"
+    },
+    "id": "usr_O2CNEuJhWYnPTIIo2ElJL6uv",
+    "email": "foo@bar.foo",
+    "firstName": "Foo",
+    "lastName": "Bar",
+    "external": {
+      "id": "usr_p1C5xM7Kb2eh4bjyKQpHtJ3s"
+    },
+    "child": {
+      "$numberInt": "3"
+    }
+  },   {
+  "_id": {
+    "$oid": "624d8e1d6d80ff15046f1610"
+  },
+  "id": "usr_aLBqK5cNC4R30Zjf4zmQX4HS",
+  "email": "bar@foo.bar",
+  "firstName": "BarFoo",
+  "lastName": "FooBar",
+  "external": {
+    "id": "usr_7tlSu7Zn1eXzhthvYK49jkj9"
+  },
+  "friend": {
+    "$oid": "624d7c713e52b83383e0cdc4"
+  },
+  "child": {
+    "$numberInt": "2"
+  }
+}
+]

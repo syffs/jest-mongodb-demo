@@ -1,0 +1,62 @@
+# User-specific stuff:
+.idea
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# dependencies
+node_modules
+
+# logs
+*.log
+
+# Nuxt build
+.nuxt
+
+# Webpack-monitor
+.monitor
+
+# redis
+*.rdb
+
+# Helm chart dependencies
+**/charts/*.tgz
+
+# build
+build
+dist
+/coverage
+
+# Env file
+.env
+.env.dev
+
+# Temp
+/tmp
+/docs/api/*.json
+/helm-charts
+/static.json
+/docker-compose.yml
+/Dockerfile.dev
+
+# exclude all content but some dirs
+/content/**/*
+!/content/**/*.md
+!/content/categories
+!/content/categories/*.js
+!/content/json-schema
+!/content/json-schema/oas2json.ts
