@@ -1,18 +1,18 @@
+import mongoose from 'mongoose'
 import supertest from 'supertest'
 
-import config from '~/config'
 import app from '~/api'
 import loaders from '~/loaders'
 
 describe('stores-api', () => {
 
     beforeAll(async () => {
-        // console.log('uri:', process.env.MONGODB_URI)
         await loaders()
         await global.dbManager.provision()
     })
     afterAll(async () => {
         await global.dbManager.unprovision()
+        await mongoose.connection.close()
     })
 
     it('should return fetched user', async () => {
