@@ -47,8 +47,8 @@ export default class MongodbEnvironment extends NodeEnvironment {
         await super.teardown()
         console.log('env: tearing down')
         await this.dbManager.unprovision()
-        await this.dbManager.stop()
         await mongoose.connection.close()
+        await this.dbManager.stop()
     }
 
     // runScript<T = unknown>(script: Script): T | null {
