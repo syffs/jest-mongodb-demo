@@ -3,7 +3,7 @@ import Int32 from 'mongoose-int32'
 
 import type {IUser} from '~/types/users'
 
-Int32.loadType(mongoose)
+// Int32.loadType(mongoose)
 
 const userSchema = new Schema({
     id: {

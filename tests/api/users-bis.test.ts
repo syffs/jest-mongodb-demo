@@ -2,7 +2,7 @@ import supertest from 'supertest'
 
 import app from '~/api'
 
-describe('users-api', () => {
+describe('users-bis-api', () => {
 
     it('should return fetched user', async () => {
         const userId = 'usr_aLBqK5cNC4R30Zjf4zmQX4HS'

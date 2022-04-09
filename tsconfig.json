@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "target": "es2018",
     "lib": [
-      "es2018"
+      "es2018",
     ],
     "typeRoots": [
       "./node_modules/@types",
@@ -14,14 +15,24 @@
       "~/*": ["*"],
       "#/*": ["../tests/*"]
     },
-
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "sourceMap": true,
     "allowJs": true,
-    "strictPropertyInitialization": false,
-    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "outDir": "./dist"
-  }
+    "module": "commonjs",
+    "pretty": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "noEmit": false,
+    "esModuleInterop": true
+  },
+  "include": [
+    "./src/**/*",
+    "./tests/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
